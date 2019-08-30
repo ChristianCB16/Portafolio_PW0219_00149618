@@ -1,0 +1,60 @@
+/*
+        Sección Bordes
+
+        Para los botones btn con la clase border, en general;
+            -Fondo transparente
+            -Color de borde y texto -> #1A237E
+
+        Para los botones btn border que impliquen colores:
+            -green: Color de borde y texto -> #4CAF50
+            -sky: Color de borde y texto -> #00BCD4
+            -purple: Color de borde y texto -> #673AB7
+    */
+
+.btn{
+    border: transparent 1px solid ;
+    border-radius: 0.3em; 
+    box-shadow: none; 
+    padding: 1em; 
+    opacity : 0.8 ;
+    text-transform: uppercase; 
+   
+
+}
+.btn:hover{
+    opacity: 1.0;
+}
+
+.btn.small{
+font-size: 0.7em; 
+}
+
+.btn.big{
+font-size: 1.1em; 
+}
+
+.btn.black{
+    background-color: #1A237E; 
+    color: white; 
+}
+.btn.green{
+    background-color: #4CAF50;
+    color: white; 
+}
+.btn.sky{
+    background-color: #00BCD4;
+    color: white; 
+}
+.btn.purple{
+    background-color: #673AB7;
+    color: white; 
+}
+
+.btn.border, h2{
+    background: transparent;
+    border: solid 1px transparent;     
+    border-color: #1A237E; 
+    color: #1A237E; 
+
+}
+                
