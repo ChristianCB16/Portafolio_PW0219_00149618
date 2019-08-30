@@ -1,0 +1,50 @@
+
+
+        /*
+        A las líneas divisoras:
+            -Borde gris punteado de 5px
+            -padding de 1px en todas direcciones
+        */
+        @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+
+        body{
+            background-color:#FFE0A8;
+            font-family: 'Raleway', sans-serif;
+            margin: 15%; 
+            margin-top: 5em; 
+            margin-bottom: 5em; 
+        }
+        h1, h4{
+            color: red; 
+        }
+
+        h3{
+            
+            border-left: 5px solid;
+            border-color: rgb(167, 62, 1); 
+            padding-left: 5px; 
+        }
+
+        p{
+            text-align: justify; 
+            text-indent: 5px; 
+        }
+
+        a{
+            color: rgb(0, 165, 102); 
+            text-decoration: none; 
+        }
+        ul > li, ol> li{
+            margin-bottom: 1em; 
+        }
+        img{
+            width: 500px; 
+        }
+        hr{
+            border-style: dotted; 
+            border-width: 5px; 
+            border-color: grey;
+            padding: 1px; 
+        
+        }
