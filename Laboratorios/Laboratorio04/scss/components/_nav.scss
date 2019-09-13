@@ -1,6 +1,10 @@
 nav{
-    @include set-dimensions(100%, auto); 
-    display: flex; 
-    flex-flow: row wrap; 
+    width: $tamaño;
+    height: $auto;
+    
+    display: $dis;
 
+    flex-flow: row wrap;
+    justify-content: flex-end;
+  
 }

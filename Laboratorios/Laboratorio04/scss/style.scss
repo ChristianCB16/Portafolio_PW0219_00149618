@@ -1,2 +1,89 @@
-@import "components/global"; 
 @import "components/nav"; 
+
+$primary_color: #871901;
+$secon_color: #269cbf;
+$tree_color: #bf26aa;
+$distance: 5em;
+$dis:flex;
+$center: center;
+$tamaño :100%;
+$auto:auto;
+
+@mixin Background($validacion) {
+    padding: 1em 5%;
+    margin: 0%;
+    display: $dis;
+    flex-direction: column;
+    justify-content: space-between;
+    @if $validacion {
+        background-image: url(/img/fondo.png);
+    }@else{
+        background: tomato;
+    }
+}
+
+
+body{
+    box-sizing: border-box;
+    height: 100vh;
+    overflow: hidden;
+
+    @include Background(true);
+
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+ 
+}
+
+main{
+    width: 90%;
+    height: $auto;
+    
+    display: $dis;
+
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content:center;
+}
+
+.iconos1{
+    width: $tamaño;
+    height: auto;
+    
+    display: $dis;
+
+    flex-flow: row wrap;
+    justify-content: center;
+
+        img{
+        width: $distance;
+        height: $distance;
+
+        margin: 0.5em;
+        border-radius:$tamaño ;
+        border-collapse: collapse;
+        }
+}
+
+
+
+.iconos1>img:hover{
+    opacity: 0.8;
+
+    @mixin fother($uno,$dos) {
+        width: $tamaño;
+        height: $auto;
+
+        display: $dis;
+
+        justify-content: $uno;
+        background: $dos;
+    }
+}
+
+footer{
+    @include fother(space-between,transparent)
+}
