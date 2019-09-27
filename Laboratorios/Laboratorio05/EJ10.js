@@ -1,7 +1,8 @@
-function abs(numero){
+function valorAbs(numero){
     if(numero<0 || numero==0){
-        Math.abs(numero);
-        //console.log(numero); 
+        
+        numero= Math.abs(numero);
+        console.log(numero); 
         
     }
     else{
@@ -9,4 +10,4 @@ function abs(numero){
     
     }
     }
-    abs(-2);
+    valorAbs(-1);
